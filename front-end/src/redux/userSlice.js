@@ -3,7 +3,7 @@ import axios from "axios";
 import Cookies from "js-cookie";
 
 // Base API URL
-const API_URL = "http://localhost:5000/api/users"|| "https://cognify-m8wn.onrender.com/api/users";
+const API_URL = "https://cognify-m8wn.onrender.com/api/users";
 
 // ✅ Fetch all users (Admin only)
 export const fetchAllUsers = createAsyncThunk(

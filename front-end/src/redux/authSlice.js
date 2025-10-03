@@ -4,7 +4,7 @@ import Cookies from "js-cookie";
 
 
 // API Base URL
-const API_URL = "http://localhost:5000/api/auth" || "https://cognify-m8wn.onrender.com/api/auth";
+const API_URL =  "https://cognify-m8wn.onrender.com/api/auth";
 
 // ✅ Register User
 export const registerUser = createAsyncThunk(
