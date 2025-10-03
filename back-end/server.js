@@ -22,14 +22,14 @@ app.use("/public", express.static("public"));
 
 
 app.use(cors({
-    origin:  "http://localhost:5173", 
+    origin:   "https://cognify-1-tyhy.onrender.com", 
     credentials: true,              
     methods: ["GET", "POST", "PUT","PATCH", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));
 app.options("*", cors()); // Handle preflight requests globally
 app.use((req, res, next) => {
-  res.header("Access-Control-Allow-Origin", "http://localhost:5173"); // Allow frontend
+  res.header("Access-Control-Allow-Origin","https://cognify-1-tyhy.onrender.com" ); // Allow frontend
   res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE");
   res.header("Access-Control-Allow-Headers", "Authorization, Content-Type");
   next();
